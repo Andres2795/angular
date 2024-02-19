@@ -1,0 +1,42 @@
+<p>persona works!</p>
+<form action="">
+    <select name="tipo" #tipo id="">
+        <option value="">Seleccione una opcion</option>
+        <option value="1">Medico</option>
+        <option value="2">Paciente</option>
+    </select>
+ <div>
+    <label for="">nombre</label>
+    <input type="text" #name name="name" required>
+ </div>
+ <div>
+    <label for="">Apellido</label>
+    <input type="text" #apellido name="apellido" required>
+ </div>
+ <div>
+    <label for="">cedula</label>
+    <input type="text" #cedula name="cedula" required>
+ </div>
+ <div>
+    <label for="">email</label>
+    <input type="text" #email name="email" required>
+ </div>
+ <div>
+    <label for="">telefono</label>
+    <input type="text" #telefono name="telefono" required>
+ </div>
+ <div>
+    <label for="">especialidad</label>
+    <input type="text" #especialidad name="especialidad" required>
+ </div>
+ <div>
+    <label for="">Tipo de id</label>
+    <input type="text" #tipoid name="tipoid" required>
+ </div>
+ <div>
+  <button type="button" (click)="registeruser(name, apellido, cedula, email, telefono, especialidad,tipoid)">Registrar</button>
+ </div>
+ 
+
+</form>
+<h1>{{mgs}}</h1>
